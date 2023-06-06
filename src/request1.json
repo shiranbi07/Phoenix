@@ -1,0 +1,10 @@
+{
+  "model": "text-davinci-003",
+  "prompt": "##### Fix bugs in the below function\n \n### Buggy Java\n\"public class BugTest { \n public void foo() { \n int j = 3 \n System.out.println(j); \n}\n}\"\n### Fixed Java",
+  "max_tokens": 182,
+  "temperature": 0,
+  "top_p": 1.0,
+  "frequency_penalty": 0.0,
+  "presence_penalty" :0.0,
+  "stop": ["###"]
+}
