@@ -9,6 +9,10 @@ import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.nio.charset.StandardCharsets;
 import com.example.chatgpt.FileHelper;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.springframework.web.client.RestTemplate;
 
 
@@ -86,7 +90,7 @@ public class ChatGPTAPIExample {
            // HttpClient httpClient= HttpClient.newHttpClient();
            // httpClient.send(request, )
 
-            String generateDataForEngine = generateDataForEngine2(code, "Python");
+            String generateDataForEngine = generateDataForEngine(code, "Python");
             String newStringWithLines = generateDataForEngine; //generateDataForEngine.replace("\r\n", "\\n");
             try (OutputStream os = con.getOutputStream()) {
                 byte[] input = newStringWithLines.getBytes(StandardCharsets.UTF_8);
@@ -102,7 +106,8 @@ public class ChatGPTAPIExample {
                 response.append(inputLine);
             }
             in.close();
-            return response.toString();
+            String parseOutput = parseOutput(response.toString());
+            return parseOutput;
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -110,6 +115,10 @@ public class ChatGPTAPIExample {
         }
     }
 
+    private static String parseOutput(String output) {
+       JsonObject jsonStr = new JsonParser().parse(output).getAsJsonObject();
+       return jsonStr.get("choices").getAsJsonArray().get(0).getAsJsonObject().get("text").getAsString();
+    }
     private static String github(String path){
         String target = "github.com";
         String replacement = "raw.githubusercontent.com";
@@ -157,16 +166,16 @@ public class ChatGPTAPIExample {
     }
 
     private static String generateDataForEngine2(String code, String language) {
-        return (("{\n" +
-                "  \"model\": \"text-davinci-003\",\n" +
-                "  \"prompt\": \"##### Fix bugs in the below function\\n \\n### Buggy Python\\nCODE_TOKEN\\n### Fixed Python\",\n" +
-                "  \"max_tokens\": 500,\n" +
-                "  \"temperature\": 0,\n" +
-                "  \"top_p\": 1.0,\n" +
-                "  \"frequency_penalty\": 0.0,\n" +
-                "  \"presence_penalty\" :0.0,\n" +
-                "  \"stop\": [\"###\"]\n" +
-                "}\n").replace("CODE_TOKEN", code));
+        return (("{\r\n" +
+                "  \"model\": \"text-davinci-003\",\r\n" +
+                "  \"prompt\": \"##### Fix bugs in the below function\\r\n \\r\n### Buggy Python\\r\\nCODE_TOKEN\\\\r\\\\n### Fixed Python\",\r\n" +
+                "  \"max_tokens\": 500,\r\n" +
+                "  \"temperature\": 0,\r\n" +
+                "  \"top_p\": 1.0,\r\n" +
+                "  \"frequency_penalty\": 0.0,\r\n" +
+                "  \"presence_penalty\" :0.0,\r\n" +
+                "  \"stop\": [\"###\"]\r\n" +
+                "}\r\n").replace("CODE_TOKEN", code));
     }
 
 }
