@@ -12,8 +12,8 @@ import java.nio.charset.StandardCharsets;
 
 public class ChatGPTAPIExample {
 
-    static final String key = "Bearer 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";
-    static final String orgKey = "org-5scvVZqCvhNkZfbJBnrsLM4q";
+    static final String key = "Bearer private key";
+    static final String orgKey = "private key";
 
     public static void listTokens() {
         try {
