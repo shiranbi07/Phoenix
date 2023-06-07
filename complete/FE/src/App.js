@@ -22,9 +22,8 @@ const App = () => {
 
     const onCodeCheckclick = async () => {
         await fetch(apiUrl, apioptions)
-            .then((response => response.text()))
+            .then((response => response.json()))
             .then(data => {
-                console.log(data);
                 setresults(data);
             })
     }
