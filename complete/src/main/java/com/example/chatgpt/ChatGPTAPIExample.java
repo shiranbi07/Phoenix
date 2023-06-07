@@ -11,18 +11,21 @@ import java.net.http.HttpClient;
 import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.nio.charset.StandardCharsets;
-import com.example.chatgpt.*;
+import com.example.chatgpt.FileHelper;
 
 public class ChatGPTAPIExample {
 
-    static final String key = "Bearer private key";
-    static final String orgKey = "private key";
+    static  String key = "Bearer " ;
+    static  String orgKey ="" ;
+
 
     public static String getAnswer(String file) {
         return "s";
     }
     public static void listTokens() {
         try {
+            String key1 = key + System.getenv("OPENAI_KEY");
+            String orgKey1 = orgKey + System.getenv("ORG_KEY");
 //This API will fetch the models available.
             URL url = new URL("https://api.openai.com/v1/models");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -30,10 +33,10 @@ public class ChatGPTAPIExample {
             con.setRequestProperty("Content-Type", "application/json");
             con.setRequestProperty("Accept", "application/json");
 //Make sure you put the right Organization key saved earlier.
-            con.setRequestProperty("OpenAI-Organization", orgKey);
+            con.setRequestProperty("OpenAI-Organization", orgKey1);
             con.setDoOutput(true);
 //Make sure you put the right API Key saved earlier.
-            con.setRequestProperty("Authorization", key);
+            con.setRequestProperty("Authorization", key1);
             int responseCode = con.getResponseCode();
             System.out.println("Response Code : " + responseCode);
             BufferedReader in = new BufferedReader(
@@ -53,16 +56,18 @@ public class ChatGPTAPIExample {
 
     public static void prompts() {
         try {
+            String key1 = key + System.getenv("OPENAI_KEY");
+            String orgKey1 = orgKey + System.getenv("ORG_KEY");
             URL url = new URL("https://api.openai.com/v1/completions");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("POST");
             con.setRequestProperty("Content-Type", "application/json");
             con.setRequestProperty("Accept", "application/json");
 //Make sure you put the right Organization key saved earlier.
-            con.setRequestProperty("OpenAI-Organization", orgKey);
+            con.setRequestProperty("OpenAI-Organization", orgKey1);
             con.setDoOutput(true);
 //Make sure you put the right API Key saved earlier.
-            con.setRequestProperty("Authorization", key);
+            con.setRequestProperty("Authorization", key1);
 //Make sure to relace the path of the json file created earlier.
             String jsonInputString = FileHelper.readLinesAsString(new File("C:\\Users\\e177118\\IdeaProjects\\BugFinder\\src\\concurrency.py"));
             String text2 = jsonInputString.replace("\r\n", "\\\\n");//jsonInputString.replace("\r\n", "\\n").replace("\r", "\\n"); //jsonInputString.replace("\r\n","\\\\n");
@@ -76,10 +81,10 @@ public class ChatGPTAPIExample {
                     .header("Accepts", "application/json")
                     .build();
 
-            HttpClient httpClient= HttpClient.newHttpClient();
+           // HttpClient httpClient= HttpClient.newHttpClient();
            // httpClient.send(request, )
 
-            String generateDataForEngine = generateDataForEngine2(text2, "Python");
+            String generateDataForEngine = generateDataForEngine2(code, "Python");
             String newStringWithLines = generateDataForEngine; //generateDataForEngine.replace("\r\n", "\\n");
             try (OutputStream os = con.getOutputStream()) {
                 byte[] input = newStringWithLines.getBytes(StandardCharsets.UTF_8);
