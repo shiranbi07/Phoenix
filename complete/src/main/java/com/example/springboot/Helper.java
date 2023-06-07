@@ -7,11 +7,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import com.example.chatgpt.;
 public class Helper {
 
     public static String getResponse(String path) throws IOException {
-        String file = "C:\\Users\\e177118\\Downloads\\gs-spring-boot-main\\gs-spring-boot-main\\complete\\src\\main\\java\\com\\example\\springboot\\Application.java";
-//       String file = github(path);
+//        String file = "C:\\Users\\e177118\\Downloads\\gs-spring-boot-main\\gs-spring-boot-main\\complete\\src\\main\\java\\com\\example\\springboot\\Application.java";
+        String file = github(path);
+        String answer = ChatGPTAPIExample.getAnswer(file);
         BufferedReader reader = new BufferedReader(new FileReader(file));
         StringBuilder response = new StringBuilder();
         String line;
