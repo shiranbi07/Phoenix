@@ -1,9 +1,6 @@
 package com.example.chatgpt;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
@@ -12,6 +9,8 @@ import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.nio.charset.StandardCharsets;
 import com.example.chatgpt.FileHelper;
+import org.springframework.web.client.RestTemplate;
+
 
 public class ChatGPTAPIExample {
 
@@ -53,21 +52,24 @@ public class ChatGPTAPIExample {
         }
     }
 
-
-    public static void prompts() {
-        try {
-            String key1 = key + System.getenv("OPENAI_KEY");
-            String orgKey1 = orgKey + System.getenv("ORG_KEY");
-            URL url = new URL("https://api.openai.com/v1/completions");
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestMethod("POST");
-            con.setRequestProperty("Content-Type", "application/json");
-            con.setRequestProperty("Accept", "application/json");
+    private static HttpURLConnection initializeConnection() throws IOException {
+        String key1 = key + System.getenv("OPENAI_KEY");
+        String orgKey1 = orgKey + System.getenv("ORG_KEY");
+        URL url = new URL("https://api.openai.com/v1/completions");
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        con.setRequestMethod("POST");
+        con.setRequestProperty("Content-Type", "application/json");
+        con.setRequestProperty("Accept", "application/json");
 //Make sure you put the right Organization key saved earlier.
-            con.setRequestProperty("OpenAI-Organization", orgKey1);
-            con.setDoOutput(true);
+        con.setRequestProperty("OpenAI-Organization", orgKey1);
+        con.setDoOutput(true);
 //Make sure you put the right API Key saved earlier.
-            con.setRequestProperty("Authorization", key1);
+        con.setRequestProperty("Authorization", key1);
+        return con;
+    }
+    public static String prompts(String fileStr) {
+        try {
+            HttpURLConnection con = initializeConnection();
 //Make sure to relace the path of the json file created earlier.
             String jsonInputString = FileHelper.readLinesAsString(new File("C:\\Users\\e177118\\IdeaProjects\\BugFinder\\src\\concurrency.py"));
             String text2 = jsonInputString.replace("\r\n", "\\\\n");//jsonInputString.replace("\r\n", "\\n").replace("\r", "\\n"); //jsonInputString.replace("\r\n","\\\\n");
@@ -100,15 +102,31 @@ public class ChatGPTAPIExample {
                 response.append(inputLine);
             }
             in.close();
-            System.out.println(response);
+            return response.toString();
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            return "";
         }
     }
 
+    private static String github(String path){
+        String target = "github.com";
+        String replacement = "raw.githubusercontent.com";
+        path = path.replace("blob/", "");
+        String gitPath = path.replace(target, replacement);
+
+
+        RestTemplate rest = new RestTemplate();
+        String res = rest.getForObject(gitPath, String.class);
+        return res;
+    }
     public static void main(String[] args) {
-        listTokens();
-        prompts();
+//
+        String path = "https://github.com/shiranbi07/Phoenix/blob/main/python_examples/deadlock.py";
+        String file = github(path);
+        String response = prompts(file);
+        System.out.println(response);
     }
 
     private static String generateDataForEngine(String code, String language) {
