@@ -6,7 +6,7 @@ import Loader from './components/loader/loader';
 
 const App = () => {
     const [filePath, setFilePath] = useState('');
-    const [results, setresults] = useState('');
+    const [results, setresults] = useState({});
     const [isLoading, setIsLoading] = useState(false);
 
     const apiUrl = 'http://10.189.150.30:8080/checkCode';
@@ -14,11 +14,7 @@ const App = () => {
 
     const apiOptions = {
         method: "POST",
-        body:
-            // "filePath" : "https://github.com/shiranbi07/Phoenix/blob/main/hackaton/amat/java/bug/BankAccount.java"
-            // '{"filePath" : "https://github.com/shiranbi07/Phoenix/blob/main/python_examples/concatenate_numbers.py"}'
-            JSON.stringify(data)
-        ,
+        body: JSON.stringify(data),
         headers: {
             "Content-Type": "application/json"
         },
@@ -41,6 +37,7 @@ const App = () => {
 
     const onClearText = () => {
         setFilePath('');
+        setresults({});
     }
 
     return (
@@ -71,7 +68,7 @@ const App = () => {
                         </Form.Group>
                     </Form.Field >
 
-                    {(Object.keys(results).length > 0) && (
+                    {(Object.keys(results).length > 0 ) && (
                         <>
                             <div>
 
@@ -79,11 +76,11 @@ const App = () => {
 
                                 <div className="ui horizontal segments">
 
-                                    <Segment id="codeResults" style={{ overflow: 'auto', minWidth: '50%', maxHeight: 300 }}>
+                                    <Segment id="codeResults" style={{ overflow: 'auto', minWidth: '50%', minHeight: 400 }}>
                                         <div dangerouslySetInnerHTML={{ __html: results.classResult }} />
                                     </Segment>
 
-                                    <Segment id="remarks" style={{ overflowY: 'auto', minWidth: '50%', maxHeight: 300 }}>
+                                    <Segment id="remarks" style={{ overflowY: 'auto', minWidth: '50%', maxHeight: 400 }}>
                                         <div dangerouslySetInnerHTML={{ __html: results.remarks }} />
                                     </Segment>
                                 </div>
