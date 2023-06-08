@@ -1,6 +1,5 @@
 package hackaton.amat.java.bug;
 
-
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
