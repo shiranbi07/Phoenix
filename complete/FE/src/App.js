@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Container, Icon, Header, Form, Segment } from 'semantic-ui-react'
 import SuccessMessage from './components/messages/SuccessMessage';
 import ErrorMessage from './components/messages/ErrorMessage';
@@ -9,22 +9,31 @@ const App = () => {
     // const apiUrl = 'http: //10.201.191.227 :8080/checkCode';
 
     const apiUrl = 'http://10.189.150.30:8080/checkCode';
-    const apioptions = {
-        method: 'POST',
-        body: {
-            filePath
-        },
-        headers: {}
+    // const apiUrl = 'localhost:8080/checkCode';
+    const data =  {filePath} ;
+
+    // {"filePath" : "https://github.com/shiranbi07/Phoenix/blob/main/hackaton/amat/java/bug/BankAccount.java"}
+    const apiOptions = {
+        method: "POST",
+        body: 
+            // "filePath" : "https://github.com/shiranbi07/Phoenix/blob/main/hackaton/amat/java/bug/BankAccount.java"
+            // '{"filePath" : "https://github.com/shiranbi07/Phoenix/blob/main/python_examples/concatenate_numbers.py"}'
+            JSON.stringify(data)
+        ,
+        headers: {
+            "Content-Type": "application/json"
+          },
     }
     const onSetUpdatefile = (e) => {
         setFilePath(e.currentTarget.value);
     }
-
+    
     const onCodeCheckclick = async () => {
-        await fetch(apiUrl, apioptions)
+        const res = await fetch(apiUrl, apiOptions)
             .then((response => response.json()))
             .then(data => {
                 setresults(data);
+                return data
             })
     }
 
