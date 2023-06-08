@@ -1,0 +1,8 @@
+---
+- name: example
+  hosts: all
+    - 127.0.0.1
+
+  tasks:
+    - name: ex1
+      shell: uname > uname.txt

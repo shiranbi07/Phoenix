@@ -1,0 +1,341 @@
+Logon Time: 		6/6/2023 11:27:40 AM
+User Name: 		AMAT\sbenisrael143633
+User CN: 		CN=SBenIsrael143633,OU=Users-Groups,OU=Israel,DC=amat,DC=com
+Password Expires: 	
+Computer Name: 		IL-HK-VDI-03
+Computer CN: 		CN=IL-HK-VDI-03,OU=NorthAmerica CAE BLADE,OU=NorthAmerica-Blade,OU=Blade Systems,OU=Custom Objects,DC=amat,DC=com
+User Profile Path: 	C:\Users\sbenisrael143633
+Authenticated by: 	\\NLAZWEAMATDC01
+Logon Script Path: 	\\Nlazweamatdc01\netlogon\AMNA\LOGONSCRIPT2.VBS
+AD Site: 		NL-Azure-West
+____________________________________________________________________________________
+Group Memberships:
+			ABNORMALSECURITY_PRODUCTION_DEPLOYMENT
+			ALGO_SANDBOX_APP
+			ALL AMAT EMPLOYEES NON-SUPPLIER
+			ALL EMPLOYEES EMEA L
+			ALL EMPLOYEES EXCEPT SCLA GLOBAL L
+			ALL EMPLOYEES EXCEPTION GIS
+			ALL EMPLOYEES GLOBAL EXCEPT EU L
+			ALL EMPLOYEES GLOBAL EXEEXCEPTION
+			ALL EMPLOYEES GLOBAL L
+			ALL EMPLOYEES GLOBAL L NO VARIAN BU
+			ALL EMPLOYEES ISRAEL L
+			ALL REGIONS - NO USJAPAN
+			ALL RFT EMPLOYEES EMEA L
+			ALL RFT EMPLOYEES EXCEPT GERMANY GLOBAL L
+			ALL RFT EMPLOYEES EXCEPT ITALY GLOBAL L
+			ALL RFT EMPLOYEES GLOBAL EXCEPT EU L
+			ALL RFT EMPLOYEES GLOBAL L
+			ALL RFT EMPLOYEES GLOBAL L NO VARIAN BU
+			ALL RFT EMPLOYEES ISRAEL L
+			ALL RFT EMPLOYEES NON-US L
+			ALL-EMPLOYEES_CONTRACTORS_GLOBAL-EXCEPT-GERMANY
+			ALL_E3_USERS_EXCLUDING_EU_AND_GERMANY
+			ALL_E3_USERS_GLOBAL
+			ALL_EMPLOYEES_EUROPE_AND_ISRAEL
+			ALL_PATHWAY_LEARNERS_MAY_2022
+			ALL_RFT_USERS_FOR_INTUNE
+			AMAT-APP-HYPRPROD-ISRAELUSER-PPE
+			AMAT-APP-HYPRPROD-NONGISUSER-PPE
+			AMAT-APP-HYPRPROD-NONGISUSERS
+			AMAT-APP-HYPRPROD-USERS
+			AMAT-CSS-CRM-USERS
+			AMAT-GLOBAL-ISR-ALL
+			AMAT-GLOBAL-MOSS-WORKFORUMS-PLIC-NOSUPPLIER-ALL
+			AMAT-GLOBAL-RFT-ALL-NONTR
+			AMAT-GLOBAL-RFT-NONTR-A-THRU-F
+			AMAT-HYPRPROD-ALLUSER-EXCLUDE_GIS
+			AMAT-SFT-SELA
+			AMIL EMPLOYEES
+			AMIL EMPLOYEES AND CWS
+			AMIL REHOVOT EMPLOYEES
+			AMIL REHOVOT EMPLOYEES AND CWS
+			AMIL WPDN ALL WOMEN
+			APP-SP-NDACOORDINATORS
+			APP-VNEXT-MIGRATED-USERS-IOS
+			APPLIEDX MOBILE USERS
+			APPLIEDX PATHWAY LEARNERS EMEA
+			APPLIEDX PATHWAY LEARNERS FY20 AMERICAS
+			APPLIEDX PATHWAY LEARNERS FY20 EMEA
+			APPLIEDXMOBILEUSERS
+			APPLIEDX_2.8.2
+			APPLIEDX_PATHWAY_LEARNERS_FY21_EMEA
+			APPLIEDX_PATHWAY_LEARNERS_FY22_EMEA
+			APPUSRGRP-BABYLON-BABYLON
+			APPUSRGRP-BABYLON-BABYLON-9
+			APPUSRGRP-CISCO-JABBER
+			APPUSRGRP-MICROSOFT-VISIO-2010-STD-PRS
+			AWS-INSTOWNER-B
+			CASB GROUP TEST
+			CITRIX-PDC-HACKATHON-USERS
+			CITRIX-XD-IL-LINUX-UB18-RND-VDI
+			CITRIX-XD-IL-RND-W10-VM
+			CV-M365ONEDRIVE-BACKUP-EUR-002
+			DOMAIN USERS
+			DSP IP AMIL
+			DSP IP MANAGERS
+			ECO_TEST
+			EDEN_CORE_TEAM
+			EMAIL QUARANTINE NOTIFICATION
+			EMEA_ET_2018
+			EMEA_ZSCALER_MOBILE
+			ERG MEMBER MASTERLIST
+			ESPP DISTRIBUTION ISRAEL L
+			ESPP REGIONS NO MTD_MTK
+			ET_CONFERENCE_2022
+			EXABEAM_EU_USERS_LIST
+			FY23_ALL_PW_EMEA
+			FY23_ALL_PW_USERS
+			FY23_LAUNCH_GROUP3
+			GENESIS_PI_PLANNING
+			GIS_SECURITY_USERS
+			HR_EVALUATION_ELIGIBILITY_NON_EUROPE_2022
+			IL-ALL
+			IL-GLB_ORANET-WTS1
+			IL-GLB_ORANET-WTS2
+			IL-GLB_PDCEPM-ALL
+			IL-GLB_QUOTALEVEL1
+			IL-PRS-USERS
+			INTEGRATED TRAINING FY17 EMPLOYEES
+			INTUNE ANDROID
+			INTUNE IOS
+			INTUNE-CB-ANDROID
+			INTUNE-CB-IOS
+			IP QUEST COMMUNITY AMIL O
+			IP WISH DEMO
+			IP-DSP AND PLATFORM STAFF
+			IPC ALL EMPLOYEES GLOBAL
+			IPC ALL RFT EMPLOYEES GLOBAL
+			IPC_EMPLOYEES
+			ISRAEL-ALG-S-SHARED-CHANGE
+			ISRAEL-CAD-MEC-GENERAL-CHANGE
+			ISRAEL-DATA-COMMON-MATLABS_TO_COMPILE-CHANGE
+			ISRAEL-DATA-FE_BULIDLICENSES-CHANGE
+			ISRAEL-DEV_SERVICES-PUBLIC-DAILYBUILD-READ
+			ISRAEL-GIS-SRC-CC_INSTALL-READ
+			ISRAEL-GIS-SRC-CQ_INSTALL-READ
+			ISRAEL-PD-APPLICATION-APPLICATION-READ
+			ISRAEL-PD-Q-DRIVE-ANTHILLCLONEFOLDER-CHANGE
+			ISRAEL-PD-Q-DRIVE-APPDEVFUNNEL-READ
+			ISRAEL-PD-Q-DRIVE-IPDATA-CHANGE
+			ISRAEL-PD-Q-DRIVE-IPNIGHTRUNSRES-CHANGE
+			ISRAEL-PD-Q-DRIVE-JAVASW-NIGHTTESTSRESULTS-READ
+			ISRAEL-PD-Q-DRIVE-JAVASW-TESTSRESULTS-READ
+			ISRAEL-PD-Q-DRIVE-MACHINES-READ
+			ISRAEL-PD-Q-DRIVE-SWDATA-CHANGE
+			ISRAEL-PD-Q-DRIVE-SWTRAINING-READ
+			ISRAEL-PD-Q-DRIVE-USER EXPERIENCE DESIGN-READ
+			ISRAEL-PD-R-IPDATA-CHANGE
+			ISRAEL-PD-R-IPNIGHTRUNSRES-CHANGE
+			ISRAEL-PD-R-LOWLEVELREFERENCE-READ
+			ISRAEL-PD-SYSTEM-PUBLIC-READ
+			ISRAEL-PDC_AUTOTEST-NIGHTTESTSRESULTS-READ
+			ISRAEL-PDC_AUTOTEST-TESTSINPUTS-CHANGE
+			ISRAEL-PDC_AUTOTEST-TESTSRESULTS-CHANGE
+			ISRAEL-PDC_DEVOPS-USERCLONES-CHANGE
+			ISRAEL-RND-INFRA-TOOLS_SIMULATORS-READ
+			ISRAEL-SWINFRA-CODECOVERAGE-READ
+			ISRAEL_ZSCALER_MOBILE
+			JAZZUSERS
+			KENDIS_PDC_OPWI
+			KM ECO INFORMATION ACCESS
+			MI_TOUCHID
+			MSPE_NOTIFICATION
+			MYID-AZURE-LICENSE-E3-EUROPEUSERS
+			NONGSUITE-POC-GROUP
+			ODB-ISRAEL-PHASE26
+			ODC EXTENDED STAFF
+			ODC SW IP EMBEDDED GROUP
+			ODC_ALGO_INTEREST
+			ODC_SW_AI_STAFF
+			ODC_SW_EXTENDED_STAFF
+			ODC_SW_NO_CONTRACTORS_FOR_ALL_HANDS
+			ONEDRIVE-EU
+			OPWI_SW_GENESIS_TEAM
+			PD WING SW
+			PDC ALL
+			PDC AMIL EMPLOYEES
+			PDC ODC PBU EMPLOYEES
+			PDC PRODUCT GROUP EMPLOYEES
+			PDC SOFTWARE EXT. ARCHITECTS AMIL
+			PDC WW EMPLOYEES
+			PDCCONFLUENCE
+			PDCRNDWIN10USERS
+			PDCUBUNTU18USERS
+			PDC_ODC_ALL_EMPLOYEES
+			PDC_WW_EMPLOYEES-ISRAEL
+			PDE1_AUDIENCE
+			PRISM_USERS
+			PROFIT SHARING GLOBAL F
+			PROOFPOINT_INSCOPE_USERS
+			PS-HR-PRD-ESS-ISR
+			RC_GLOBAL
+			RSU GROSS SHARES GLOBAL F
+			RSU GROSS SHARES NO FRANCE GLOBAL F
+			SOFTWARE_AUDIENCE
+			SW RND EXTENDED STAFF
+			TT_ENGR
+			UNIX_IL-LINUBVM-017_REMOTE_ACCESS
+			UNIX_IL-LINUBVM-017_ROOT_ACCESS
+			UNIX_IL-LINUBVM-608_REMOTE_ACCESS
+			UNIX_IL-LINUBVM-608_ROOT_ACCESS
+			VNEXT-LICENSE-DEFAULT
+			VNEXT_SKYPE_MIGRATED_USER
+			WEBEX-CCASP-HOSTS
+			WIN_7_USRES
+			WORKSCOUNCIL-EXCLUDEGERMANY
+____________________________________________________________________________________
+11:27:40 AM
+Starting Task: "DISABLE_IE_DEBUGGING"
+Disabling Microsoft Script Debugger 
+- Success
+11:27:40 AM
+Starting Task: "COPY_FILE, \\Nlazweamatdc01\netlogon\AMNA\Utilities\adminset.exe, C:\Windows\adminset.exe, NOOVERWRITE"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\adminset.exe to C:\Windows\adminset.exe
+Error: 70 Permission denied
+11:27:40 AM
+Starting Task: "COPY_FILE, \\Nlazweamatdc01\netlogon\AMNA\Utilities\KIX32.exe, C:\Windows\KIX32.exe, NOOVERWRITE"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\KIX32.exe to C:\Windows\KIX32.exe
+Error: 70 Permission denied
+11:27:40 AM
+Starting Task: "COPY_FILE, \\Nlazweamatdc01\netlogon\AMNA\Utilities\TNS Names\TNSNames.ora, C:\Orant\Network\Admin\TNSNames.ora, NOOVERWRITE"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\TNS Names\TNSNames.ora to C:\Orant\Network\Admin\TNSNames.ora
+Error: 76 Path not found
+11:27:40 AM
+Starting Task: "COPY_FILE, \\Nlazweamatdc01\netlogon\AMNA\Utilities\TNS Names\TNSNames.ora, c:\oracle\product\10.2.0\client_1\network\admin\TNSNames.ora, NOOVERWRITE"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\TNS Names\TNSNames.ora to c:\oracle\product\10.2.0\client_1\network\admin\TNSNames.ora
+Error: 76 Path not found
+11:27:40 AM
+Starting Task: "Copy_File, \\Nlazweamatdc01\netlogon\AMNA\Temporary_Scripts\AutoMap.ini, C:\Windows\IS\GLS-Support\, NOOVERWRITE"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Temporary_Scripts\AutoMap.ini to C:\Windows\IS\GLS-Support\
+Error: 76 Path not found
+11:27:40 AM
+Starting Task: "DELETE_FILE, C:\ProgramData\Desktop\RoboBackup.lnk"
+Deleting File C:\ProgramData\Desktop\RoboBackup.lnk
+- Success (File was not present)
+11:27:40 AM
+Starting Task: "DELETE_FILE, C:\Windows\Robobackup.bat"
+Deleting File C:\Windows\Robobackup.bat
+- Success (File was not present)
+11:27:40 AM
+Starting Task: "DELETE_FILE, C:\Windows\Robocopy.kix"
+Deleting File C:\Windows\Robocopy.kix
+- Success (File was not present)
+11:27:40 AM
+Starting Task: "DELETE_FILE, C:\Windows\Roborestore.kix"
+Deleting File C:\Windows\Roborestore.kix
+- Success (File was not present)
+11:27:40 AM
+Starting Task: "Copy_File, \\Nlazweamatdc01\netlogon\AMNA\Utilities\Translateprinter.txt, C:\Windows\IS\GLS-Support\, NOOVERWRITE"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\Translateprinter.txt to C:\Windows\IS\GLS-Support\
+Error: 76 Path not found
+11:27:40 AM
+Starting Task: "Call_Program, \\Nlazweamatdc01\netlogon\AMNA\Utilities\Chgprint.exe, /nodialogs, BACKGROUND, NOWAIT, Updating Printers"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\Chgprint.exe to C:\Windows\IS\GLS-Support\Chgprint.exe
+Error: 76 Path not found
+Error: (C:\Windows\IS\GLS-Support\Chgprint.exe) Does Not Exist.
+11:27:40 AM
+Starting Task: "Call_Program, \\Nlazweamatdc01\netlogon\AMNA\Utilities\Workdayfix.exe, /l, BACKGROUND, NOWAIT, Adding workday to trusted site list"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\Workdayfix.exe to C:\Windows\IS\GLS-Support\Workdayfix.exe
+Error: 76 Path not found
+Error: (C:\Windows\IS\GLS-Support\Workdayfix.exe) Does Not Exist.
+11:27:40 AM
+Starting Task: "Call_Program, \\Nlazweamatdc01\netlogon\AMNA\Utilities\Trustedsites.exe, /l, BACKGROUND, WAIT, Gathering Trusted Sites Information"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Utilities\Trustedsites.exe to C:\Windows\IS\GLS-Support\Trustedsites.exe
+Error: 76 Path not found
+Error: (C:\Windows\IS\GLS-Support\Trustedsites.exe) Does Not Exist.
+11:27:40 AM
+Starting Task: "DELETE_FILE, C:\Windows\IS\GLS-Support\\Auto_Map_Home_Folder.vbs"
+Deleting File C:\Windows\IS\GLS-Support\\Auto_Map_Home_Folder.vbs
+- Success (File was not present)
+11:27:40 AM
+Starting Task: "Call_Script, \\Nlazweamatdc01\netlogon\AMNA\Temporary_Scripts\Auto_Map_Home_Folder.vbs, BACKGROUND, Mapping Home Folder"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Temporary_Scripts\Auto_Map_Home_Folder.vbs to C:\Windows\IS\GLS-Support\Auto_Map_Home_Folder.vbs
+Error: 76 Path not found
+Executing: C:\Windows\system32\wscript.exe  C:\Windows\IS\GLS-Support\Auto_Map_Home_Folder.vbs
+- Success
+11:27:40 AM
+Starting Task: "Call_Script, \\Nlazweamatdc01\netlogon\AMNA\Temporary_Scripts\PrintersReMap.vbs, BACKGROUND, NOWAIT, Printer Remapping"
+Copying \\Nlazweamatdc01\netlogon\AMNA\Temporary_Scripts\PrintersReMap.vbs to C:\Windows\IS\GLS-Support\PrintersReMap.vbs
+Error: 76 Path not found
+Executing: C:\Windows\system32\wscript.exe  C:\Windows\IS\GLS-Support\PrintersReMap.vbs
+- Success
+____________________________________________________________________________________
+Executing Commands for Organizational Unit: Israel
+
+11:27:41 AM
+Starting Task: "Map_Drive, X:, \\amat.com\folders\israel\data"
+Mapping 'X:' to '\\amat.com\folders\israel\data' 
+Error: -2147023664: The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+
+2:31:33 PM
+Starting Task: "Map_drive, P:, \\ilapps\ilapp01\apps"
+Mapping 'P:' to '\\ilapps\ilapp01\apps' 
+Error: -2147024829: The network name cannot be found.
+
+____________________________________________________________________________________
+Executing Commands for Group: IL-GLB_oranet-wts1
+
+2:31:51 PM
+Starting Task: "COPY_FILE, \\il-wts-01\Oranet\orant\network\ADMIN\TNSNames.ora, C:\Orant\Network\Admin\TNSNames.ora, OVERWRITE"
+Copying \\il-wts-01\Oranet\orant\network\ADMIN\TNSNames.ora to C:\Orant\Network\Admin\TNSNames.ora
+Error: (\\il-wts-01\Oranet\orant\network\ADMIN\TNSNames.ora) 
+____________________________________________________________________________________
+Executing Commands for Group: IL-GLB_oranet-wts2
+
+2:31:53 PM
+Starting Task: "COPY_FILE, \\il-wts-01\Oranet\orant\network\ADMIN\TNSNames.ora, C:\Orant\Network\Admin\TNSNames.ora, OVERWRITE"
+Copying \\il-wts-01\Oranet\orant\network\ADMIN\TNSNames.ora to C:\Orant\Network\Admin\TNSNames.ora
+Error: (\\il-wts-01\Oranet\orant\network\ADMIN\TNSNames.ora) 
+____________________________________________________________________________________
+Executing Commands for Group: IL-GLB_oranet-wts1
+
+2:31:53 PM
+Starting Task: "Map_Drive, O:, \\il-wts-01\oranet"
+Mapping 'O:' to '\\il-wts-01\oranet' 
+Error: -2147024829: The network name cannot be found.
+
+____________________________________________________________________________________
+Executing Commands for Group: IL-GLB_oranet-wts2
+
+2:31:56 PM
+Starting Task: "Map_Drive, O:, \\amil-wts2\oranet"
+Mapping 'O:' to '\\amil-wts2\oranet' 
+Error: -2147024829: The network name cannot be found.
+
+____________________________________________________________________________________
+Executing Commands for Group: ISRAEL-PD-Q-DRIVE-IPData-CHANGE
+
+2:32:19 PM
+Starting Task: "Map_Drive, Q:, \\amat.com\folders\Israel\PD-Q-Drive"
+Mapping 'Q:' to '\\amat.com\folders\Israel\PD-Q-Drive' 
+Error: -2147023664: The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+
+____________________________________________________________________________________
+Executing Commands for Group: ISRAEL-PD-Q-DRIVE-IPNightRunsRes-CHANGE
+
+2:32:41 PM
+Starting Task: "Map_Drive, Q:, \\amat.com\folders\Israel\PD-Q-Drive"
+Mapping 'Q:' to '\\amat.com\folders\Israel\PD-Q-Drive' 
+Error: -2147023664: The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+
+____________________________________________________________________________________
+Executing Commands for Group: ISRAEL-PD-Q-DRIVE-Machines-READ
+
+2:32:41 PM
+Starting Task: "Map_Drive, Q:, \\amat.com\folders\Israel\PD-Q-Drive"
+Mapping 'Q:' to '\\amat.com\folders\Israel\PD-Q-Drive' 
+Error: -2147023664: The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+
+____________________________________________________________________________________
+Executing Commands for Group: ISRAEL-PD-Q-DRIVE-SWData-CHANGE
+
+2:32:41 PM
+Starting Task: "Map_Drive, Q:, \\amat.com\folders\Israel\PD-Q-Drive"
+Mapping 'Q:' to '\\amat.com\folders\Israel\PD-Q-Drive' 
+Error: -2147023664: The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+
+Reduced:  2
+Script Finished 2:32:41 PM
+Execution Time: 11101  Seconds.
