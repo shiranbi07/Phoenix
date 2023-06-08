@@ -5,9 +5,11 @@ import java.util.concurrent.ExecutionException;
 
 public class BankAccount {
         private int amount;
+        
         BankAccount(int amount) {
             this.amount = amount;
         }
+        
         public void takeAmount(int takeIt,int sl) {
             try {
                 Thread.sleep(sl);
